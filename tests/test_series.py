@@ -64,7 +64,7 @@ def test_sum_series_0_default():
     expected = 0
     assert actual == expected
 
-def test_sum_series_1_default():
+def test_sum_series_1_default(): 
     actual = series.series.sum_series(1)
     expected = 1
     assert actual == expected
