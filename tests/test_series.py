@@ -58,4 +58,38 @@ def test_lucas_11():
     expected = 199
     assert actual == expected
     
+#sum_series tests
+def test_sum_series_0_default():
+    actual = series.series.sum_series(0)
+    expected = 0
+    assert actual == expected
 
+def test_sum_series_1_default():
+    actual = series.series.sum_series(1)
+    expected = 1
+    assert actual == expected
+
+def test_sum_series_2_default():
+    actual = series.series.sum_series(2)
+    expected = 1
+    assert actual == expected
+
+def test_sum_series_2_lucas():
+    actual = series.series.sum_series(2, 2, 1)
+    expected = 3
+    assert actual == expected
+
+def test_sum_series_8_lucas():
+    actual = series.series.sum_series(8, 2, 1)
+    expected = 47
+    assert actual == expected
+
+def test_sum_series_8():
+    actual = series.series.sum_series(8, 4, 7)
+    expected = 199
+    assert actual == expected
+
+def test_sum_series_7():
+    actual = series.series.sum_series(7, 6, 19)
+    expected = 295
+    assert actual == expected
